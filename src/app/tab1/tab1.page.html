@@ -1,23 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Próximo a você
+      Lista Telefônica
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-chip>
-    <ion-label>Escola </ion-label>
-    <ion-icon name="school-outline"></ion-icon>
-  </ion-chip>
-  <ion-chip color="warning">
-    <ion-label>Academia </ion-label>
-    <ion-icon name="barbell-outline"></ion-icon>
-  </ion-chip>
-  <ion-chip color="primary">
-    <ion-label>Comércio </ion-label>
-    <ion-icon name="card-outline"></ion-icon>
-  </ion-chip>
-  
+  <ion-list>
+    <ion-item-divider>A</ion-item-divider>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets\imagens\person.png">
+      </ion-avatar>
+      <ion-label>Adam</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets\imagens\person.png">
+    </ion-avatar>
+    <ion-label>Alberto</ion-label>
+  </ion-item>
+
+  <ion-item-divider>B</ion-item-divider>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets\imagens\bart.png">
+    </ion-avatar>
+    <ion-label>Bart</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets\imagens\person.png">
+    </ion-avatar>
+    <ion-label>Bruno</ion-label>
+  </ion-item>
+
+  <ion-item-divider>H</ion-item-divider>
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets\imagens\homer.jpg">
+    </ion-avatar>
+    <ion-label>Homer</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="assets\imagens\person.png">
+    </ion-avatar>
+    <ion-label>Hugo</ion-label>
+  </ion-item>
+
 </ion-content>
