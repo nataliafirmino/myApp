@@ -1,48 +1,75 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Cadastro
+      Aba 1
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <ion-item>
-    <ion-input placeholder="Fulano de tal" label="Nome:"></ion-input>
-  </ion-item>
+  <ion-fab vertical="top" horizontal="end" slot="fixed" edge>
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
 
-  <ion-item>
-    <ion-input type="email" placeholder="meu_email@email.com" label="E-mail:"></ion-input>
-  </ion-item>
+    <ion-fab-list side="start">
+      <ion-fab-button color="dark">
+        <ion-icon name="barbell-outline"></ion-icon>
+      </ion-fab-button>
 
-  <ion-item>
-    <ion-input type="date" label="Data de Nascimento:"></ion-input>
-  </ion-item>
+      <ion-fab-button color="dark">
+        <ion-icon name="eyedrop-outline"></ion-icon>
+      </ion-fab-button>
 
-  <ion-item>
-    <ion-input type="number" placeholder="Digite apenas números" label="RG" labelPlacement= "stacked"></ion-input>
-  </ion-item>
+    </ion-fab-list>
 
-  <ion-item>
-    <ion-select label="Cor" placeholder="Qual cor você se identifica?">
-      <ion-select-option value="Branco">Branco</ion-select-option>
-      <ion-select-option value="Pardo">Pardo</ion-select-option>
-      <ion-select-option value="Preto">Preto</ion-select-option>
-      <ion-select-option value="Outros">Outros</ion-select-option>
-    </ion-select>
-  </ion-item>
+    <ion-fab-list side="bottom">
+      <ion-fab-button>
+        <ion-icon name="call-outline"></ion-icon>
+      </ion-fab-button>
 
-  <ion-item>
-    <ion-toggle>Receber publicidade</ion-toggle>
-  </ion-item>
+      <ion-fab-button>
+        <ion-icon name="cloud-outline"></ion-icon>
+      </ion-fab-button>
 
-  <ion-item>
-    <ion-range labelPlacement="start" label="Faixa salarial" min="1500" max="20000" step="500"
-     [ticks]="true" [snaps]="true" [pin]="true"></ion-range>
-  </ion-item>
+    </ion-fab-list>
+  </ion-fab>
 
-  <ion-item>
-    <ion-checkbox>Concordo com os termos</ion-checkbox>
-  </ion-item>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="camera-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <ion-list>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+    <ion-item>
+      Conteúdo
+    </ion-item>
+  </ion-list>
+  
 </ion-content>
