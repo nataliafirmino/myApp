@@ -1,75 +1,39 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Aba 1
+      Não Vistos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-icon slot="start" name="call-outline" color="primary"></ion-icon>
+    <ion-label>Ligações</ion-label>
+    <ion-badge color="primary" slot="end">3</ion-badge>
+  </ion-item>
 
-  <ion-fab vertical="top" horizontal="end" slot="fixed" edge>
-    <ion-fab-button>
-      <ion-icon name="add"></ion-icon>
-    </ion-fab-button>
+  <ion-item>
+    <ion-icon slot="start" name="chatbubble-ellipses-outline" color="warning"></ion-icon>
+    <ion-label>Mensagens</ion-label>
+    <ion-badge color="warning" slot="end">36</ion-badge>
+  </ion-item>
 
-    <ion-fab-list side="start">
-      <ion-fab-button color="dark">
-        <ion-icon name="barbell-outline"></ion-icon>
-      </ion-fab-button>
+  <ion-item>
+    <ion-icon slot="start" name="mail-outline" color="dark"></ion-icon>
+    <ion-label>Emails</ion-label>
+    <ion-badge color="dark" slot="end">23</ion-badge>
+  </ion-item>
 
-      <ion-fab-button color="dark">
-        <ion-icon name="eyedrop-outline"></ion-icon>
-      </ion-fab-button>
+  <ion-item>
+    <ion-icon slot="start" name="person-add-outline" color="success"></ion-icon>
+    <ion-label>Novos Seguidores</ion-label>
+    <ion-badge color="success" slot="end">16</ion-badge>
+  </ion-item>
 
-    </ion-fab-list>
-
-    <ion-fab-list side="bottom">
-      <ion-fab-button>
-        <ion-icon name="call-outline"></ion-icon>
-      </ion-fab-button>
-
-      <ion-fab-button>
-        <ion-icon name="cloud-outline"></ion-icon>
-      </ion-fab-button>
-
-    </ion-fab-list>
-  </ion-fab>
-
-  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="camera-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <ion-list>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-    <ion-item>
-      Conteúdo
-    </ion-item>
-  </ion-list>
-  
+  <ion-item>
+    <ion-icon slot="start" name="heart-outline" color="danger"></ion-icon>
+    <ion-label>Curtidas</ion-label>
+    <ion-badge color="danger" slot="end">43</ion-badge>
+  </ion-item>
 </ion-content>
