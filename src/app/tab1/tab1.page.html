@@ -7,22 +7,90 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-item>
-    <ion-label>Fluxo de caixa</ion-label>
-  </ion-item>
+  <ion-chip (click)="generoRock()">
+    <ion-label>Rock</ion-label>
+  </ion-chip>
 
-  <ion-item>
-    <ion-label> Entrada: R$ {{entrada}},00</ion-label>
-  </ion-item>
+  <ion-chip (click)="generoForro()">
+    <ion-label color="danger">Forró</ion-label>
+  </ion-chip>
 
-  <ion-item>
-    <ion-label> Saída: R$ {{saida}},00</ion-label>
-  </ion-item>
+  <ion-chip (click)="generoSamba()">
+    <ion-label color="warning">Samba</ion-label>
+  </ion-chip>
 
-  <ion-item color={{obterCor()}}>Total em caixa: R$ {{total()}},00 </ion-item>
+  <br>
+  <div *ngIf = "genero === ''">
+    <ion-item>
+      <ion-label disabled="disabled"> Escolha uma opção:</ion-label>
+    </ion-item>
+  </div>
 
-  <ion-button color="primary" (click)="adicionar()"> Adicionar R$ 1,00 </ion-button>
-  
-  <ion-button color="danger" (click)="retirar()"> Retirar R$ 1,00 </ion-button>
+  <div *ngIf = "genero === 'Rock'">
+    <ion-card>
+    <img src="./assets/imagens/rock.jpg" />
+    <ion-card-header>
+    <ion-card-title>Rock and Roll</ion-card-title>
+    <ion-card-subtitle>História</ion-card-subtitle>
+    </ion-card-header>
+      <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Nunc semper arcu quis porta bibendum. 
+      Quisque pharetra nisl varius mauris consectetur mollis sit amet ut lorem. 
+      Ut pulvinar lacinia mauris. Curabitur tristique, orci vitae convallis condimentum, lacus mi imperdiet nunc, 
+      vel congue arcu neque vel leo. Vivamus porta id lorem vitae placerat. 
+      Etiam placerat pellentesque finibus. Curabitur nec nisl ornare, mattis mauris vel,
+      convallis felis. Sed et dui dignissim, malesuada nibh ut, sollicitudin felis. 
+      Maecenas a consequat velit. 
+      Praesent sit amet urna vehicula nisi ultricies tempus nec in risus. 
+      Etiam commodo mi ut urna pharetra, eu porttitor ante vehicula.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf = "genero === 'Forró'">
+    <ion-card>
+    <img src="./assets/imagens/forro.png" />
+    <ion-card-header>
+    <ion-card-title>Forro</ion-card-title>
+    <ion-card-subtitle>História</ion-card-subtitle>
+    </ion-card-header>
+      <ion-card-content>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Nunc semper arcu quis porta bibendum. 
+      Quisque pharetra nisl varius mauris consectetur mollis sit amet ut lorem. 
+      Ut pulvinar lacinia mauris. Curabitur tristique, orci vitae convallis condimentum, lacus mi imperdiet nunc, 
+      vel congue arcu neque vel leo. Vivamus porta id lorem vitae placerat. 
+      Etiam placerat pellentesque finibus. Curabitur nec nisl ornare, mattis mauris vel,
+      convallis felis. Sed et dui dignissim, malesuada nibh ut, sollicitudin felis. 
+      Maecenas a consequat velit. 
+      Praesent sit amet urna vehicula nisi ultricies tempus nec in risus. 
+      Etiam commodo mi ut urna pharetra, eu porttitor ante vehicula.
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div *ngIf = "genero === 'Samba'">
+  <ion-card>
+  <img src="./assets/imagens/samba.jpeg" />
+  <ion-card-header>
+  <ion-card-title>Samba</ion-card-title>
+  <ion-card-subtitle>História</ion-card-subtitle>
+  </ion-card-header>
+    <ion-card-content>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Nunc semper arcu quis porta bibendum. 
+    Quisque pharetra nisl varius mauris consectetur mollis sit amet ut lorem. 
+    Ut pulvinar lacinia mauris. Curabitur tristique, orci vitae convallis condimentum, lacus mi imperdiet nunc, 
+    vel congue arcu neque vel leo. Vivamus porta id lorem vitae placerat. 
+    Etiam placerat pellentesque finibus. Curabitur nec nisl ornare, mattis mauris vel,
+    convallis felis. Sed et dui dignissim, malesuada nibh ut, sollicitudin felis. 
+    Maecenas a consequat velit. 
+    Praesent sit amet urna vehicula nisi ultricies tempus nec in risus. 
+    Etiam commodo mi ut urna pharetra, eu porttitor ante vehicula.
+    </ion-card-content>
+  </ion-card>
+  </div>
+
 
 </ion-content>

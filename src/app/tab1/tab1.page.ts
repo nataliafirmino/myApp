@@ -7,28 +7,21 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class Tab1Page {
+  genero: string = '';
 
-  public entrada: number = 0;
-  public saida: number = 0;
-
-  total(): number {
-    return this.entrada - this.saida;
-  }
   constructor() {}
 
-  adicionar() {
-    this.entrada++;
+  generoForro(){
+    this.genero = 'Forró';
   }
 
-  retirar(){
-    this.saida++;
+  generoRock(){
+    this.genero = 'Rock';
   }
 
-  obterCor(): string {
-    if (this.total() > 0) {
-      return 'primary';
-    }else{
-      return 'danger';
-    }
-}
+  generoSamba(){
+    this.genero = 'Samba';
+  }
+
+
 }
